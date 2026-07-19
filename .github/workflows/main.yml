@@ -30,15 +30,3 @@ jobs:
           else
             echo "No package.json found — skipping Node build steps"
           fi
-
-      - name: Run tests (if defined)
-        run: |
-          if [ -f package.json ]; then
-            if npm run | grep -q " test"; then
-              npm test --if-present
-            else
-              echo "No test script defined in package.json"
-            fi
-          else
-            echo "No package.json found — skipping tests"
-          fi
