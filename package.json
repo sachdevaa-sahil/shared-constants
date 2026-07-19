@@ -1,10 +1,18 @@
 {
-  "name": "shared-constants",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@sahil.sachdevaa5244/shared-constants",
+  "version": "1.0.1",
+  "description": "Shared TypeScript constants, interfaces, and types for Node.js packages.",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "prepublishOnly": "npm run build",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -29,8 +37,13 @@
     "type": "git",
     "url": "git+https://github.com/sachdevaa-sahil/shared-constants.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "typescript",
+    "constants",
+    "shared",
+    "nodejs"
+  ],
+  "author": "Sahil Sachdeva",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sachdevaa-sahil/shared-constants/issues"
