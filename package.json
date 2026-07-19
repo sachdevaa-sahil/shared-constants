@@ -1,6 +1,6 @@
 {
   "name": "@sahil.sachdevaa5244/shared-constants",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Shared TypeScript constants, interfaces, and types for Node.js packages.",
   "type": "module",
   "publishConfig": {
