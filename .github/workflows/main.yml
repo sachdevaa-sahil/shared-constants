@@ -25,9 +25,6 @@ jobs:
       - name: Build package
         run: npm run build
 
-      - name: Verify npm authentication  
-        run: npm whoami
-
       - name: Verify package version
         run: npm access ls-packages --json | jq -r '.[] | select(.name == "shared-constants") | .version'
 
